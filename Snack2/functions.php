@@ -1,11 +1,8 @@
-<?php 
-    include_once 'data.php';
+<?php
+include_once 'data.php';
 
-function vote_average($vote){
-
-    $average = array_sum($vote) / count($vote);
-
+function vote_average($array)
+{
+    $average = array_sum($array) / count($array);
+    return round($average, 1);
 }
-    
-
-?>
